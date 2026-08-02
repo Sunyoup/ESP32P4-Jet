@@ -6,8 +6,8 @@ This is an application of CubeCoders' Jet (https://github.com/CubeCoders/Jet) 3D
 
 This is desinged for Waveshare's ESP32-P4-WIFI6-POE-ETH board & 5-DSI-TOUCH-A LCD display:
 
-https://docs.waveshare.com/ESP32-P4-WIFI6-POE-ETH
-https://www.waveshare.com/wiki/5-DSI-TOUCH-A?srsltid=AfmBOoqJHMFsEj88ozwSaozcvow9fhw7FGydK1QIuFCG_sB9le9H1Off
+- https://docs.waveshare.com/ESP32-P4-WIFI6-POE-ETH
+- https://www.waveshare.com/wiki/5-DSI-TOUCH-A?srsltid=AfmBOoqJHMFsEj88ozwSaozcvow9fhw7FGydK1QIuFCG_sB9le9H1Off
 
 But you can select other products from Waveshare.
 
