@@ -23,8 +23,8 @@ But you can select other products from Waveshare.
 This is tested with ESP-IDF v5.5.3 .
 
 ```
-git clone --recursive https://github.com/Sunyoup/FNK104N_Jet.git
-cd FNK104N_Jet
+git clone --recursive https://github.com/Sunyoup/ESP32P4-Jet.git
+cd ESP32P4-Jet
 rm -rf components/Jet/src/JetConfig.example.hpp
 cp JetConfig.hpp components/Jet/src/
 idf.py menuconfig
