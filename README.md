@@ -38,4 +38,12 @@ idf.py menuconfig
 
 idf.py flash monitor
 ```
+## License
 
+This project is open-source and released under the **GNU General Public License v3.0 (GPL-3.0)** for non-commercial and educational purposes.
+
+### Component Licenses & Attributions
+
+* **Jet 3D Engine**: Created by [CubeCoders](https://cubecoders.com/). 
+  * The `components/Jet` directory is subject to the original licensing terms set by CubeCoders.
+  * **Commercial Use Notice**: According to CubeCoders' licensing terms, if you plan to use this software or its Jet engine component for commercial purposes, you are required to either release your source code under a compatible open-source license or purchase a commercial license from the original author.
