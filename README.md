@@ -51,7 +51,7 @@ Before the stage of "idf.py menuconfig":
 ```
 cp sdkconfig.ESP32P4X sdkconfig
 idf.py menuconfig
-(... Save as above ...)
+(... Same as above ...)
 ```
 
 ## License
