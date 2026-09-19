@@ -37,7 +37,23 @@ idf.py menuconfig
 (Save sdkconfig)
 
 idf.py flash monitor
+
 ```
+
+## In case of ESP32-P4X (ESP32-P4 rev3.x, pure 400MHz)
+
+Before the stage of "idf.py menuconfig":
+
+- Chip revision should be 3.x.
+- The bootloader size should be increased.
+- sdkconfig.ESP32P4X contains those options.
+
+```
+cp sdkconfig.ESP32P4X sdkconfig
+idf.py menuconfig
+(... Save as above ...)
+```
+
 ## License
 
 This project is open-source and released under the **GNU General Public License v3.0 (GPL-3.0)** for non-commercial and educational purposes.
