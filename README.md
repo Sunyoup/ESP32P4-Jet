@@ -27,17 +27,25 @@ git clone --recursive https://github.com/Sunyoup/ESP32P4-Jet.git
 cd ESP32P4-Jet
 rm -rf components/Jet/src/JetConfig.example.hpp
 cp JetConfig.hpp components/Jet/src/
+```
+
+## In case of ESP32-P4 (ESP32-P4 rev < 3.x, 360MHz)
+
+```
 idf.py menuconfig
 - Go to "Component config" -> "Board Support Package(ESP32-P4)" -> "Display" -> "Select LCD type" -> "Waveshare 5-DSI-TOUCH-A Display"
-
-(If your ESP32-P4 chip revision is below 3.x, do following:)
-- Go to "Component config" -> "Hardware Settings" -> "Chip revision" -> "[*] Select ESP32-P4 revisions <3.0 (No >=3.x Support)" : Chek.
+- Go to "Component config" -> "Hardware Settings" -> "Chip revision" -> "[*] Select ESP32-P4 revisions <3.0 (No >=3.x Support)" : Check.
 - Go to "Component config" -> "ESP System Settings" -> "[ ] Force 400MHz on revision < 3.0 (EXPERIMENTAL)" : Uncheck.
-
 (Save sdkconfig)
-
 idf.py flash monitor
+```
 
+or 
+
+```
+cp sdkconfig.ESP32P4 sdkconfig
+(Save sdkconfig)
+idf.py flash monitor
 ```
 
 ## In case of ESP32-P4X (ESP32-P4 rev3.x, pure 400MHz)
@@ -49,9 +57,19 @@ Before the stage of "idf.py menuconfig":
 - sdkconfig.ESP32P4X contains those options.
 
 ```
-cp sdkconfig.ESP32P4X sdkconfig
 idf.py menuconfig
-(... Same as above ...)
+- Go to "Component config" -> "Board Support Package(ESP32-P4)" -> "Display" -> "Select LCD type" -> "Waveshare 5-DSI-TOUCH-A Display"
+- Go to "Component config" -> "Hardware Settings" -> "Chip revision" -> "[ ] Select ESP32-P4 revisions <3.0 (No >=3.x Support)" : Uncheck.
+(Save sdkconfig)
+idf.py flash monitor
+```
+
+or 
+
+```
+cp sdkconfig.ESP32P4X sdkconfig
+(Save sdkconfig)
+idf.py flash monitor
 ```
 
 ## License
@@ -62,4 +80,3 @@ This project is open-source and released under the **GNU General Public License 
 
 * **Jet 3D Engine**: Created by [CubeCoders](https://cubecoders.com/). 
   * The `components/Jet` directory is subject to the original licensing terms set by CubeCoders.
-  * **Commercial Use Notice**: According to CubeCoders' licensing terms, if you plan to use this software or its Jet engine component for commercial purposes, you are required to either release your source code under a compatible open-source license or purchase a commercial license from the original author.
